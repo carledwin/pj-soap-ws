@@ -3,14 +3,12 @@ package com.pj.soap.ws;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
-import javax.xml.ws.RequestWrapper;
 import javax.jws.soap.SOAPBinding;
-import javax.xml.bind.annotation.XmlElement;
-
-import com.pj.soap.ws.model.User;
+import javax.jws.soap.SOAPBinding.Style;
+import javax.xml.ws.RequestWrapper;
 
 @WebService
-@SOAPBinding
+@SOAPBinding(style=Style.RPC)
 public interface PrincipalWS {
 
 	@WebMethod

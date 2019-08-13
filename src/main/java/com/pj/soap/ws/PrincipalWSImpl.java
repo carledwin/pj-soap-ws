@@ -53,7 +53,7 @@ public class PrincipalWSImpl implements PrincipalWS {
 			throwException("Dados inválidos para a consulta ao usuário!");
 		}
 		
-		return "Full name: " + name + " " + surname + " Age: " + age;
+		return "Full name: " + name + " " + surname + ", Age: " + age;
 	}
 
 }
